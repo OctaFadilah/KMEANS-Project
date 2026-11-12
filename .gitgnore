@@ -1,0 +1,18 @@
+# Python cache & temp files
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE & Editor settings (VS Code / PyCharm)
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
