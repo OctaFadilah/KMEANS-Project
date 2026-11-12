@@ -1,4 +1,11 @@
-# Earthquake K-Means Clustering
+# Earthquake K-Means Clustering & Spatial Analysis
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-%3E%3D1.1-orange?logo=scikit-learn&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-yellow)
+
+An unsupervised machine learning project for spatial earthquake clustering using **K-Means**, optimized with the **Elbow Method** and **Silhouette Coefficient**. This repository contains clean data processing pipelines, evaluation scripts, and spatial visualization tools for subsurface seismic pattern analysis.
 
 A machine learning project focused on grouping earthquake events based on spatial coordinates, depth, and magnitude using the K-Means clustering algorithm. This repository includes data preparation, evaluation metrics (Elbow Method & Silhouette Score), and visual plots to determine the optimal number of clusters ($K$).
 
@@ -45,9 +52,3 @@ pip install -r requirements.txt
 * `matplotlib>=3.6`
 * `seaborn>=0.12`
 
----
-
-## 👥 Contributors
-
-- **Daniel Kuncoro**
-- **Octa Fadilah**
