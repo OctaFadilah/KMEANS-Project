@@ -14,13 +14,13 @@ An unsupervised machine learning project for spatial earthquake clustering using
 ```text
 KMEANS-Project/
 │
-├── Data/                      # Dataset files (earthquake CSV data)
+├── Data/                      # Dataset files (earthquake CSV & TXT data)
 ├── images/                    # Visualizations and evaluation plots
 │   ├── elbow_method.png       # Elbow Method curve (WCSS vs K)
 │   └── silhouette_score.png   # Silhouette Score graph for K validation
 │
 ├── Main.py                    # Main K-Means clustering pipeline
-├── Plotting.py                # Spatial distribution and cluster visualization
+├── Plotting.py                # Initial spatial data distribution plotting
 ├── elbowmethod.py             # Elbow Method script for optimal K
 ├── silhouettemethod.py        # Silhouette Score validation script
 ├── .gitignore                 # Files and directories ignored by Git
@@ -64,16 +64,16 @@ To ensure reliable clustering results, this project uses two complementary evalu
 
 ## 🚀 Usage
 
-Run the evaluation scripts first to determine the optimal number of clusters ($K$), then execute the main clustering and plotting pipelines:
+Run the exploratory plotting and evaluation scripts first, then execute the main clustering pipeline:
 
 ```bash
-# 1. Evaluate optimal K
+# 1. Plot initial data distribution & evaluate optimal K
+python Plotting.py
 python elbowmethod.py
 python silhouettemethod.py
 
-# 2. Run K-Means clustering and generate spatial plots
+# 2. Run K-Means clustering
 python Main.py
-python Plotting.py
 ```
 
 ---
