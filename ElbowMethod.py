@@ -10,7 +10,6 @@ for k in K_range:
     kmeans.fit(X_scaled) 
     inertia.append(kmeans.inertia_)
 
-
 plt.figure(figsize=(8, 5))
 plt.plot(K_range, inertia, marker='o', linestyle='-', color='b')
 plt.title('Elbow Method for Optimal K')
