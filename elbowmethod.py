@@ -1,3 +1,7 @@
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
 X = df[['latitude', 'longitude', 'depth', 'mag']].values
 
 scaler = StandardScaler()
