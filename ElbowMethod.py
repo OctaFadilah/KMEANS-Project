@@ -13,8 +13,8 @@ for k in K_range:
 
 plt.figure(figsize=(8, 5))
 plt.plot(K_range, inertia, marker='o', linestyle='-', color='b')
-plt.title('Elbow Method')
-plt.xlabel('Jumlah Cluster (K)')
+plt.title('Elbow Method for Optimal K')
+plt.xlabel('Number of Clusters (K)')
 plt.ylabel('Inertia (WCSS)')
 plt.xticks(K_range)
 plt.grid(True)
