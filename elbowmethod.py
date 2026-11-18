@@ -8,7 +8,6 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 inertia = []
 K_range = range(1, 11)
-
 for k in K_range:
     kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
     kmeans.fit(X_scaled) 
